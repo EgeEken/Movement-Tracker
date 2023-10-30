@@ -39,11 +39,9 @@ imgpro.WriteVideo(filename + "_contrast", contrast)
 ```
 
 <details><summary>Results: (click here to open)</summary>
-<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/b41d6d77-2d59-4e4f-a7d9-97ef5ba223aa"> 
+<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/f079ec60-18d3-450c-9da5-c20d9cc1f4a4"> 
 </video>
 </details>
-
-
 
 ### Creating a black and white contrast video, same system, but doesnt take hue changes into account
 
@@ -53,7 +51,7 @@ imgpro.WriteVideo(filename + "_contrast_normalized", normalized)
 ```
 
 <details><summary>Results: (click here to open)</summary>
-<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/92e81bb6-bb5a-4d47-b0c4-1b21bd5e3676"> 
+<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/c9e251a0-f395-42d4-b7f3-01dd232b4ec1"> 
 </video>
 </details>
 
@@ -65,7 +63,7 @@ imgpro.WriteVideo(filename + "_movement_tracker", tracker)
 ```
 
 <details><summary>Results: (click here to open)</summary>
-<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/8dfca2d3-d0a2-4fe3-b1f5-cc5e4b586a25"> 
+<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/f38a60a0-d8cd-4ac3-8dfb-abdf3bf04160"> 
 </video>
 </details>
 
@@ -78,6 +76,8 @@ imgpro.WriteVideo(filename + "_movement_tracker_threshold_" + str(threshold), tr
 ```
 
 <details><summary>Results: (click here to open)</summary>
-<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/ea338a14-da0d-456a-b8d3-940664cde33f"> 
+<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/7a32bc2e-4452-4102-be41-7c256087b06e"> 
 </video>
 </details>
+
+
