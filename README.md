@@ -79,5 +79,3 @@ imgpro.WriteVideo(filename + "_movement_tracker_threshold_" + str(threshold), tr
 <video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/7a32bc2e-4452-4102-be41-7c256087b06e"> 
 </video>
 </details>
-
-
