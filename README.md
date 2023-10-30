@@ -26,7 +26,10 @@ from ImageProcessing_Ege import imgpro
 filename = "video.mp4" # Alternatively, ("video"), the extension ".mp4" is added if needed.
 vid = imgpro.ReadVideo(filename)
 ```
-
+<details><summary>Results: (click here to open)</summary>
+<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/8337dc90-976b-49f5-85c9-d94cb1561980"> 
+</video>
+</details>
 
 ### Creating a contrast video, this is done by subtracting frame i-1 from every frame i
 
@@ -34,6 +37,11 @@ vid = imgpro.ReadVideo(filename)
 contrast = imgpro.contrast_video(vid) # Alternatively, contrast_video("video.mp4")
 imgpro.WriteVideo(filename + "_contrast", contrast)
 ```
+
+<details><summary>Results: (click here to open)</summary>
+<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/b41d6d77-2d59-4e4f-a7d9-97ef5ba223aa"> 
+</video>
+</details>
 
 
 
@@ -44,12 +52,22 @@ normalized = imgpro.contrast_video_bnw(vid) # Alternatively, contrast_video_bnw(
 imgpro.WriteVideo(filename + "_contrast_normalized", normalized)
 ```
 
+<details><summary>Results: (click here to open)</summary>
+<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/92e81bb6-bb5a-4d47-b0c4-1b21bd5e3676"> 
+</video>
+</details>
+
 ### Creating a motion tracked video, this returns the same video but with a red dot with a white center placed on the tracked movement center
 
 ```py
 tracker = imgpro.movement_tracker_cv2(vid)
 imgpro.WriteVideo(filename + "_movement_tracker", tracker)
 ```
+
+<details><summary>Results: (click here to open)</summary>
+<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/8dfca2d3-d0a2-4fe3-b1f5-cc5e4b586a25"> 
+</video>
+</details>
 
 ### Creating a motion tracked video, with a threshold to lower the impact camera shaking or noise has on the motion tracking, the higher threshold used, the more strict the program will be with what it considers "motion"
 
@@ -58,3 +76,8 @@ threshold = 50
 tracker = imgpro.movement_tracker_cv2_threshold(vid, threshold)
 imgpro.WriteVideo(filename + "_movement_tracker_threshold_" + str(threshold), tracker)
 ```
+
+<details><summary>Results: (click here to open)</summary>
+<video loop autoplay muted playsinline src="https://github.com/EgeEken/Movement-Tracker/assets/96302110/ea338a14-da0d-456a-b8d3-940664cde33f"> 
+</video>
+</details>
